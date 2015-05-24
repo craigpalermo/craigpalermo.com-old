@@ -1,14 +1,9 @@
-NodeJS Starter
+CraigPalermo.com
 ========
-This project uses NodeJS, ExpressJS, and Jade for easy templating to quickly create static sites.
+This is Craig's website.
 
 ## Tech Used
-I don't like HTML, CSS, or JavaScript, so I don't use them. I encourage you
-to do the same.
-
-This project is already set up to serve Jade, Stylus, and CoffeeScript, so
-as you make changes to those files, they'll automatically be reflected as
-soon as you refresh the page.
+Jade, Stylus, CoffeeScript, NodeJS
 
 ## Getting Set Up
 Run these commands to get things set up:
