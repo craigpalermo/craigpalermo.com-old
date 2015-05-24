@@ -1,5 +1,61 @@
-html
-body
+@import 'nib'
+
+.header
+    background #3f51b5
+    border-bottom 16px solid #303f9f
+    color #fff
+    padding 60px 0
+    text-align center
+
+.center-vert
+    align-items center
+    display flex
+    flex-direction column
     height 100%
-    padding 0
-    margin 0
+    justify-content center
+
+.pic-container
+    align-items center
+    justify-content center
+    display flex
+
+section
+    padding 30px 0
+
+section:not(first-child)
+    border-top 1px solid #B6B6B6
+
+h3
+    color #727272
+    text-align center
+    text-transform uppercase
+
+
+// about section
+#avatar
+    background url('../img/avatar.jpg') center center no-repeat
+    background-size 100%
+    border-radius 50%
+    height 120px
+    margin-bottom 25px
+    width 120px
+
+.about .column
+    height 200px
+
+
+// education section
+#umd
+    background url('../img/umd.png') center center no-repeat
+    background-size 100%
+    border-radius 50%
+    height 170px
+    width 170px
+
+.education .column
+    height 200px
+
+
+// footer
+.footer
+    text-align center

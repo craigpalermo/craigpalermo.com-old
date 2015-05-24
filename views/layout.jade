@@ -4,9 +4,10 @@ html(lang="en")
     //- vendor scripts
     script(src='/vendor/jquery/jquery.js')
 
-    //- my styles
+    //- styles
     link(rel="stylesheet", href="/stylus/style.css")
     link(rel="stylesheet", href="/vendor/normalize.css/normalize.css")
+    link(rel="stylesheet", href="/vendor/skeleton/skeleton.css")
 
     //- misc settings
     meta(charset="utf-8")
@@ -17,11 +18,13 @@ html(lang="en")
 
   body
 
-    header
-      h1 Craig Palermo
-      h1 Front-end Engineer
+    section.header
+      div.container
+        h1 Craig Palermo
+        h2 Front-end Engineer
 
     block content
 
-    footer
-      p Contact me at #[a(href="mailto:craig@craigpalermo.com") craig@craigpalermo.com]
+    section.footer
+      div.container
+        p Contact me at #[a(href="mailto:craig@craigpalermo.com") craig@craigpalermo.com]

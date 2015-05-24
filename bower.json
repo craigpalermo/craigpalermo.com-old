@@ -4,7 +4,8 @@
   "private": "true",
   "dependencies": {
     "jquery": "*",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "skeleton": "~2.0.4"
   },
   "install": {
     "path": "public/vendor",

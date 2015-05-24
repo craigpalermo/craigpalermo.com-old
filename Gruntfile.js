@@ -11,7 +11,8 @@ module.exports = function(grunt) {
             livereload: {
                 files: ['coffee/**/*.coffee',
                         'views/**/*.jade',
-                        'stylus/**/*.styl'],
+                        'public/**/*.css'
+                ],
                 options: { livereload: true },
             },
             coffee: {
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
                 tasks: ['jade:compile']
             },
             stylus: {
-                files: ['stylus/**/*.styl'],
+                files: ['./**/*.styl'],
                 tasks: ['stylus:compile']
             }
         },
@@ -40,6 +41,17 @@ module.exports = function(grunt) {
                     dest: './public/',
                     ext: '.html'
                 }]
+            }
+        },
+        /* compile stylus */
+        stylus: {
+            compile: {
+                options : {
+                    compress: true
+                },
+                files: {
+                    './public/stylus/style.css': './public/stylus/style.styl'
+                }
             }
         }
     });
