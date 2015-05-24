@@ -1,0 +1,13 @@
+{
+  "name": "MyApp",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "jquery": "*",
+    "normalize.css": "~3.0.3"
+  },
+  "install": {
+    "path": "public/vendor",
+    "sources": {}
+  }
+}
