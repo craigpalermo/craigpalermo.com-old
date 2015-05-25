@@ -1,29 +1,30 @@
 extends layout
 
 block content
+
+  //- about me
   section
     div.container
-      h3 About Me
+      div.one-half.column.center-vert.center
+        h3 About Me
+        p
+          | I'm a front-end engineer specializing in web application development.
+          | I have a passion for building tools for a more useful Internet.
 
       div.row
-        div.center-vert
+        div.one-half.column.center-vert.center
           div.pic-container
-            div#avatar
-
-      div.row
-        div.center-vert
-          p
-            | I'm a front-end engineer specializing in web application development.
-            | I have a passion for building tools for a more useful Internet.
+            div#avatar.img-round
 
 
+  //- experience
   section
     div.container
       div.row
         h3 Experience
         
-        div
-          h5 Switch, Front-end Engineer
+        div.experience
+          h5.experience__title Switch, Front-end Engineer
           p Oct. 2014 - Present (NYC)
           ul
             li
@@ -36,8 +37,8 @@ block content
               | Worked with designers to implement improvements to 
               | the #[a(href="//www.switchapp.com", target="_blank") Switch homepage]
 
-        div
-          h5 Booz Allen Hamilton, Software Engineer Intern
+        div.experience
+          h5.experience__title Booz Allen Hamilton, Software Engineer Intern
           p June - Aug. 2014 (D.C. Metro Area)
           ul
             li
@@ -45,6 +46,7 @@ block content
               | to communicate with a CubeSat communication system
 
 
+  //- skills
   section
     div.container
       h3 Skills
@@ -72,12 +74,14 @@ block content
 
   section
     div.container
-      h3 Education
-
       div.row.education
-        div.one-half.column.center-vert
-          h4 B.S. of Computer Science
-          h5 University of Maryland, College Park
-        div.one-half.column.center-vert
+        div.one-half.column.center-vert.center
+          h3 Education
+          p 
+            | B.S. of Computer Science
+          p
+            | University of Maryland, College Park
+
+        div.one-half.column.center-vert.center
           div.pic-container
-            div#umd
+            div#umd.img-round

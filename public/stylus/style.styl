@@ -1,14 +1,11 @@
 @import 'nib'
 
-.header
-    background #3f51b5
-    border-bottom 16px solid #303f9f
-    color #fff
-    padding 60px 0
+.center
+    align-items center !important
     text-align center
 
 .center-vert
-    align-items center
+    align-items flex-start
     display flex
     flex-direction column
     height 100%
@@ -27,33 +24,62 @@ section:not(first-child)
 
 h3
     color #727272
+    font-size 25px
     text-align center
     text-transform uppercase
+
+h5
+    font-size 22px
+
+
+// header
+.header
+    background #3f51b5
+    border-bottom 16px solid #303f9f
+    color #fff
+    padding 60px 0
+    text-align center
+
+.title
+    margin-bottom 1rem
+
+.subtitle
+    color #c5cae9
+    font-size 24px
+
+.img-round
+    border-radius 50%
+    height 120px
+    width 120px
 
 
 // about section
 #avatar
     background url('../img/avatar.jpg') center center no-repeat
     background-size 100%
-    border-radius 50%
-    height 120px
     margin-bottom 25px
-    width 120px
 
 .about .column
     height 200px
+
+
+// experience section
+.experience__title
+    margin-bottom 8px
 
 
 // education section
 #umd
     background url('../img/umd.png') center center no-repeat
     background-size 100%
-    border-radius 50%
-    height 170px
-    width 170px
 
-.education .column
-    height 200px
+.education
+    
+    p
+        margin-bottom 10px
+
+    .column
+        height 200px
 
 
 // footer
