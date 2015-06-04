@@ -34,7 +34,7 @@ app.use(express.static(__dirname + '/public'))
 
 # landing page
 landing = (req, res) ->
-  res.render('landing', {title: "Home"})
+  res.render('landing', {title: "Craig Palermo - Freelance Web Developer & Web Sonsultant"})
 
 # Routes
 app.get('/', landing)

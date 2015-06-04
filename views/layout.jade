@@ -18,13 +18,23 @@ html(lang="en")
 
   body
 
-    section.header
-      div.container
-        h1.title Craig Palermo
-        h2.subtitle Front-end Engineer
+    header.header
+      div.header-overlay
+        div.container
+          h1.title Craig Palermo
+          h2.subtitle Freelance Web Developer & Web Consultant
+
+    nav
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="//blog.craigpalermo.com") Blog
+        li
+          a(href="https://github.com/unscsprt?tab=repositories") Projects
 
     block content
 
-    section.footer
+    footer.footer
       div.container
-        p Contact me at #[a(href="mailto:craig@craigpalermo.com") craig@craigpalermo.com]
+        p #[strong Contact Me] - craig[at]craigpalermo.com
