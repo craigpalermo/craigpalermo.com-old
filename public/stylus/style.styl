@@ -1,4 +1,5 @@
 @import 'nib'
+@import url('http://fonts.googleapis.com/css?family=Racing+Sans+One')
 
 .center
     align-items center !important
@@ -23,6 +24,7 @@ section
     border-bottom 1px solid #B6B6B6
 
 
+h1
 h2
 h3
     font-family 'Bitter', serif
@@ -41,9 +43,8 @@ a
     text-decoration none
 
 a:focus
-a:active
 a:hover
-    opacity .65
+  opacity .65
 
 
 /*
@@ -65,11 +66,19 @@ nav ul
 
 nav li
     display inline
+    font-size 18px
     list-style-type none
     padding 0 0 0 40px
 
 nav a
     text-decoration none
+
+nav .active
+  text-decoration underline
+
+.nav__logo a
+    color #fff !important
+    font-family 'Racing Sans One', cursive
 
 @media screen and (max-width: 550px)
     .nav__logo

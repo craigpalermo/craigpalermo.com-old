@@ -33,11 +33,16 @@ app.use(express.static(__dirname + '/public'))
 # Begin routes -------------------------------------
 
 # landing page
-landing = (req, res) ->
-  res.render('landing', {title: "Craig Palermo - Freelance Web Developer & Web Consultant"})
+home = (req, res) ->
+  res.render('home', {title: "Craig Palermo - Web Developer"})
+
+# services page
+services = (req, res) ->
+  res.render('services', {title: "Craig Palermo - Services"})
 
 # Routes
-app.get('/', landing)
+app.get('/', home)
+app.get('/services', services)
 
 # End routes -------------------------------------
 
