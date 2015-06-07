@@ -5,7 +5,8 @@
   "dependencies": {
     "jquery": "*",
     "normalize.css": "~3.0.3",
-    "skeleton": "~2.0.4"
+    "skeleton": "~2.0.4",
+    "fontawesome": "~4.3.0"
   },
   "install": {
     "path": "public/vendor",

@@ -1,98 +1,96 @@
 extends layout
 
 block content
+  //- skills
+  section
+    div.container
+      div.row
+        div.one-third.column
+          div.skill
+            i.fa.fa-html5
+            h2.skill__title HTML & CSS
+            p.skill__description
+              | I love the challenge of building content that looks good
+              | everywhere.
+
+        div.one-third.column
+          div.skill
+            i.fa.fa-server
+            h2.skill__title Backend
+            p.skill__description
+              | Even the sleekest car needs an engine. Django is my
+              | favorite engine.
+
+        div.one-third.column
+          div.skill
+            i.fa.fa-tachometer
+            h2.skill__title Performance Tuning
+            p.skill__description
+              | Query optimization, minification, and compression are some
+              | of my favorite #[span(style="text-decoration: line-through;") buzzwords]
+              |  tricks.
 
   //- about me
   section
     div.container
-      div.one-half.column.center-vert.center
-        h3 About Me
+      div.column.center-vert.center
+        h3 About Me#[a(name="about")]
         p
-          | I'm a front-end engineer specializing in web application development.
-          | I have a passion for building tools for a more useful Internet.
-
-      div.row
-        div.one-half.column.center-vert.center
-          div.pic-container
-            div#avatar.img-round
+          | I'm a web developer who loves building tools to make the Internet
+          | a more useful place. I graduated from the University of Maryland
+          | in 2015 with a B.S. in Computer Science.
+        p
+          | Some of my interests include developer workflow optimization,
+          | advocating the use of cutting-edge tools to advance the state of 
+          | the web, online privacy, and coffee.
 
   //- experience
   section
     div.container
       div.row
-        h3 Professional Experience
-        
-        div.experience
-          h5.experience__title Switch, Front-end Engineer
-          p Oct. 2014 - Present (New York City, NY)
-          ul
-            li
-              | Built AngularJS client application that enables employers to use
-              | Switch on the web
-            li
-              | Contribued to backend feature additions and maintenance to
-              | Switch's core product
-            li
-              | Worked with designers to implement improvements to 
-              | the #[a(href="//www.switchapp.com", target="_blank") Switch homepage]
+        div.column.one-half
+          h3 Code#[a(name="work")]
+          
+          div.experience
+            h5.experience__title #[a(href="https://github.com/unscsprt/timestamp.js") timestamp.js]
+            p JavaScript library for converting date strings to timestamps
 
-        div.experience
-          h5.experience__title Booz Allen Hamilton, Software Engineer Intern
-          p June - Aug. 2014 (D.C. Metro Area)
-          ul
-            li
-              | Worked with fellow interns to build a web-based portal
-              | to communicate with a CubeSat communication system
+          div.experience
+            h5.experience__title #[a(href="https://github.com/unscsprt/DryIce") DryIce]
+            p Anonymous & temporary online filesharing service
 
-        div.experience
-          h5.experience__title UMD CATT Lab, Web Developer & IT Admin
-          p May 2013 - May 2014 (College Park, MD)
-          ul
-            li
-              | Built Django web application prototype for FAA that would
-              | allow air traffic controllers to vote on proposed daily operations
-            li
-              | Added new features and bug fixes to existing Django projects
-            li
-              | Performed OS installs and Linux server infrastructure maintenance
+          div.experience
+            h5.experience__title #[a(href="https://github.com/unscsprt/metro-grid") metro-grid]
+            p Realtime, at-a-glance status of D.C. metro rail
 
-  //- skills
-  section
-    div.container
-      h3 Skills & Interests
+          div.experience
+            h5.experience__title #[a(href="https://github.com/unscsprt/metro-grid") Firebase tic-tac-toe]
+            p Multiplayer tic-tac-toe powered by Firebase
 
-      div.row
-        div.one-third.column
-          h5 Front-end
-          ul
-            li HTML5 & CSS3
-            li AngularJS
-            li JavaScript & CoffeeScript
+        div.column.one-half
+          h3 Work
+          
+          div.experience
+            h5.experience__title Switch, Front-end Engineer
+            p Oct. 2014 - Present (New York City, NY)
+            ul
+              li
+                | Built client-facing AngularJS app for employers
+              li
+                | Added new features to Switch's backend
+              li
+                | Worked on the #[a(href="//www.switchapp.com", target="_blank") Switch homepage]
 
-        div.one-third.column
-          h5 Back-end
-          ul
-            li Django
-            li SQL
+          div.experience
+            h5.experience__title Booz Allen Hamilton, Software Engineer Intern
+            p June - Aug. 2014 (D.C. Metro Area)
+            ul
+              li
+                | Built a web app to take a view pictures via
+                | radio communication with a CubeSat
 
-        div.one-third.column
-          h5 General
-          ul
-            li Web Application Development
-            li Python
-            li Workflow Optimization
-
-  //- education
-  section
-    div.container
-      div.row.education
-        div.one-half.column.center-vert.center
-          h3 Education
-          p 
-            | B.S. of Computer Science
-          p
-            | University of Maryland, College Park
-
-        div.one-half.column.center-vert.center
-          div.pic-container
-            div#umd.img-round
+          div.experience
+            h5.experience__title UMD CATT Lab, Web Developer & IT Admin
+            p May 2013 - May 2014 (College Park, MD)
+            ul
+              li Django web development and Linux server administration

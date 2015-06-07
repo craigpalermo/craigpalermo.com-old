@@ -1,13 +1,6 @@
 doctype html
 html(lang="en")
   head
-    //- vendor scripts
-    script(src='/vendor/jquery/jquery.js')
-
-    //- styles
-    link(rel="stylesheet", href="/vendor/normalize.css/normalize.css")
-    link(rel="stylesheet", href="/vendor/skeleton/skeleton.css")
-    link(rel="stylesheet", href="/stylus/style.css")
 
     //- misc settings
     meta(charset="utf-8")
@@ -18,23 +11,35 @@ html(lang="en")
 
   body
 
+    nav
+      div.container
+        div
+          div.nav__logo Craig Palermo
+          ul.nav__links
+            li
+              a(href="#about") About
+            li
+              a(href="#work") Work
+            li
+              a(href="//blog.craigpalermo.com") Blog
+
     header.header
       div.header-overlay
         div.container
-          h1.title Craig Palermo
-          h2.subtitle Freelance Web Developer & Web Consultant
-
-    nav
-      ul
-        li
-          a(href="/") Home
-        li
-          a(href="//blog.craigpalermo.com") Blog
-        li
-          a(href="https://github.com/unscsprt?tab=repositories") Projects
+          h1.title I'm a web developer
 
     block content
 
     footer.footer
       div.container
         p #[strong Contact Me] - craig[at]craigpalermo.com
+
+    //- vendor scripts
+    script(src='/vendor/jquery/jquery.js')
+
+    //- styles
+    link(rel="stylesheet", href="/vendor/normalize.css/normalize.css")
+    link(rel="stylesheet", href="/vendor/skeleton/skeleton.css")
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href='http://fonts.googleapis.com/css?family=Bitter')
+    link(rel="stylesheet", href="/stylus/style.css")
